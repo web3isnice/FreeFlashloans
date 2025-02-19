@@ -1,6 +1,6 @@
 # Solana Flashloan Implementation
 
-This project implements a flashloan mechanism on Solana using Kamino Finance's kLend protocol for flashloans with no fees.
+This project implements a flashloan mechanism on Solana using Kamino Finance's kLend protocol for zero interest-rate.
 
 ## System Setup
 
