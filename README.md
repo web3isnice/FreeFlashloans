@@ -2,50 +2,58 @@
 
 This project implements a flashloan mechanism on Solana using Kamino Finance's kLend protocol.
 
-## Prerequisites
+## System Setup
 
-- Node.js (v16 or higher)
-- npm or yarn
-- A Solana wallet with SOL and USDC
-- A USDC token account
-- Access to a Solana RPC endpoint
+```sh
+# Update system packages
+sudo apt update && sudo apt upgrade -y
 
-## Setup
+# Install Node.js and npm 
+sudo apt install npm
+npm install -g n
+n stable
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd solana-flashloan
+# Install git
+sudo apt install git -y
 ```
 
-2. Install dependencies:
-```bash
-npm install
+## Project Setup
+
+```sh
+# Clone the project (replace with your repo URL)
+git clone https://github.com/web3isnice/LiquidationFlashloans.git
+cd LiquidationFlashloans
+
+# Install dependencies
+npm install --legacy-peer-deps
 ```
 
-3. Configure environment variables:
-```bash
-cp .env.example .env
+## Configuration
+
+### Create keypair file:
+
+```sh
+# Create keypair.json
+touch keypair.json
+
+# Add your private key in JSON array format
+# Example format: [1,2,3,...,32] (32 bytes)
 ```
 
-4. Edit the `.env` file with your details:
-- `RPC_ENDPOINT`: Your Solana RPC endpoint
-- `KEYPAIR_PATH`: Path to your keypair JSON file
-- `USDC_TOKEN_ACCOUNT`: Your USDC token account address
+### Create .env file:
 
-## Keypair Format Support
+```sh
+# Create .env file in project root
+touch .env
 
-The script supports multiple keypair formats:
-- 32-byte array (secret key only)
-- 64-byte array (public key + secret key)
-- JSON object with `secretKey` field
+# Add required configuration
+APP=production
+KEYPAIR_PATH=/Absolute/path/to/keypair.json
+USDC_TOKEN_ACCOUNT=<your-usdc-token-account-address>  # Optional: Defaults to NY endpoint
+RPC_ENDPOINT=https://api.mainnet-beta.solana.com  # Optional: Your preferred Solana RPC
+```
 
-## Security Notice
-
-⚠️ NEVER commit your `.env` file or share your private keys!
-⚠️ Make sure your private key is properly secured and backed up.
-
-## Running the Script
+### Start
 
 ```bash
 npm start
