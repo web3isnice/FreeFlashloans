@@ -47,7 +47,6 @@ touch keypair.json
 touch .env
 
 # Add required configuration
-APP=production
 KEYPAIR_PATH=/Absolute/path/to/keypair.json
 USDC_TOKEN_ACCOUNT=<your-usdc-token-account-address>  # Optional: Defaults to NY endpoint
 RPC_ENDPOINT=https://api.mainnet-beta.solana.com  # Optional: Your preferred Solana RPC
