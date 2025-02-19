@@ -30,8 +30,15 @@ cp .env.example .env
 
 4. Edit the `.env` file with your details:
 - `RPC_ENDPOINT`: Your Solana RPC endpoint
-- `PRIVATE_KEY`: Your wallet's private key (as comma-separated numbers)
+- `KEYPAIR_PATH`: Path to your keypair JSON file
 - `USDC_TOKEN_ACCOUNT`: Your USDC token account address
+
+## Keypair Format Support
+
+The script supports multiple keypair formats:
+- 32-byte array (secret key only)
+- 64-byte array (public key + secret key)
+- JSON object with `secretKey` field
 
 ## Security Notice
 
