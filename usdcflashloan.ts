@@ -13,7 +13,7 @@ export async function flashLoan(borrowAmount: BN, payer: Keypair, tokenAccount: 
                   const RESERVE_LIQUIDITY_MINT = new PublicKey("EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"); // addresses[0]; // FcMXW4...bt1wrs
                  // const solana_address = new PublicKey("So11111111111111111111111111111111111111112");
                   const SRC_LIQUIDITY_ADDRESS = new PublicKey("Bgq7trRgVMeq33yt235zM2onQ4bRDBsY5EWiTetF4qw6"); // addresses[1]; // 9wyWAg...WTnA5w
-                  const USDCtokenAccount = new PublicKey("G8vY2SDWc6v58YfpxxDLYqdDLKTVB58R637dvVCy9kdJ");/// addresses[4]; //  YOUR_WSOL_ACCOUNT
+                  // const USDCtokenAccount = new PublicKey("G8vY2SDWc6v58YfpxxDLYqdDLKTVB58R637dvVCy9kdJ");/// addresses[4]; //  YOUR_WSOL_ACCOUNT
                   const FEE_RECEIVER_ADDRESS = new PublicKey("BbDUrk1bVtSixgQsPLBJFZEF7mwGstnD5joA1WzYvYFX"); // addresses[5]; // 5wo1tF...PhvgC7
                   const REFERRER = new PublicKey("KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"); // addresses[3]; // So1end...tMCpAo
                  // const myPublicKey = addresses[55]; //
