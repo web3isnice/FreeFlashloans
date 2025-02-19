@@ -21,11 +21,11 @@ sudo apt install git -y
 
 ```sh
 # Clone the project (replace with your repo URL)
-git clone https://github.com/web3isnice/LiquidationFlashloans.git
-cd LiquidationFlashloans
+git clone https://github.com/web3isnice/FreeFlashloans.git
+cd FreeFlashloans
 
 # Install dependencies
-npm install --legacy-peer-deps
+npm install 
 ```
 
 ## Configuration
