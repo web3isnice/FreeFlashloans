@@ -48,8 +48,8 @@ touch .env
 
 # Add required configuration
 KEYPAIR_PATH=/Absolute/path/to/keypair.json
-USDC_TOKEN_ACCOUNT=<your-usdc-token-account-address>  # Optional: Defaults to NY endpoint
-RPC_ENDPOINT=https://api.mainnet-beta.solana.com  # Optional: Your preferred Solana RPC
+USDC_TOKEN_ACCOUNT=<your-usdc-token-account-address> 
+RPC_ENDPOINT=https://api.mainnet-beta.solana.com 
 ```
 
 ### Start
