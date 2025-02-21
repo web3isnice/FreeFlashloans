@@ -56,4 +56,5 @@ RPC_ENDPOINT=https://api.mainnet-beta.solana.com
 
 ```bash
 npm start
+# Then see transaction on solscan
 ```
